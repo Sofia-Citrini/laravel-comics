@@ -21,6 +21,16 @@
     }
 }
 
+.search-bar{
+    border: none;
+    border-bottom: 2px solid $color-primary;
+
+    &::placeholder{
+        color: $text-color;
+        text-align: end;
+    }
+}
+
 .jumbotron{
     height: 350px;
 
