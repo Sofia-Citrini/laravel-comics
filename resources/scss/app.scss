@@ -1,1 +1,105 @@
-@import '~bootstrap/scss/bootstrap'
+// variabili
+@use "./partials/variables" as *;
+
+@use "./partials/footer" as *;
+
+@import '~bootstrap/scss/bootstrap';
+
+
+// HEADER
+.img-container{
+ width: 3rem;
+}
+
+.nav-link{
+    color: $text-color;
+    text-transform: uppercase;
+    font-size: .8rem;
+
+    &:hover{
+        color: $color-primary;
+    }
+}
+
+.jumbotron{
+    height: 350px;
+
+    .img-block{
+        display: block;
+        height: 100%;
+        width: 100%;
+        object-fit:cover;
+        object-position: top;
+    }
+}
+
+//LISTA FUMETTI
+.current-series{
+    background-color: $color-secondary-dark;
+
+    .title{
+        margin: -2rem;
+    
+        h3{
+            display: inline-block;
+            font-size: 1rem;
+            color: white;
+            padding: .5rem 1rem;
+            background-color: $color-primary;
+        }
+    }
+    
+    .load-btn{
+        background-color: $color-primary;
+        border: none;
+        color: white;
+        text-transform: uppercase;
+        padding: .2rem 2rem;
+    }
+
+    .img-fluid{
+        object-fit: cover;
+        object-position: top;
+    }
+    
+    .text-card{
+    color: white;
+    font-size: x-small;
+    text-transform: uppercase;
+    padding: .5rem 0;
+    }
+}
+
+// BANNER INFO
+.banner-info {
+    background-color: $color-primary;
+
+    .info{
+        flex-basis: calc(100% / 5);
+        justify-content: center;
+    
+        .img-container{
+            width: 2rem;
+            object-fit: contain;
+        }
+    
+        .text{
+            text-transform: uppercase;
+            font-size: smaller;
+    
+            a{
+                text-decoration: none;
+                color: white;
+                padding: .5rem;
+            }
+        }
+    }
+}
+
+
+// FOOTER
+h6{
+    font-weight: bold;
+    color: white;
+}
+
